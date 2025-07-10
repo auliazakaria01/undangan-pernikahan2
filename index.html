@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Undangan Pernikahan</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Pernikahan Iqbal & Aulia</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <section class="hero"><h1>A Love Story</h1>
-    <p>Aulia & Iqbal</p>
-    <p>Senin, 19 Januari 2026</p>
-    <button id="openBtn">Lihat Undangan</button>
+  <audio id="bg-music" autoplay loop>
+    <source src="audio/forever_in_me.mp3" type="audio/mpeg" />
+  </audio>
+
+  <section id="cover">
+    <div class="cover-content">
+      <img src="img/cover.jpg" alt="Foto Mempelai" class="cover-photo" />
+      <h1>Ahmad Iqbal Zakaria & Aulia Umi Nabila</h1>
+      <p>Senin, 19 Januari 2026</p>
+      <div id="countdown"></div>
+      <button onclick="bukaUndangan()">Buka Undangan</button>
+    </div>
   </section>
 
-  <section class="content" id="invitation" style="display: none;">
-    <h4>Assalamu'alaikum Warahmatullahi Wabarakatuh</h4>
-    <p>Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan kami:</p>
-    <h3>Aulia Umi Nabila</h3>
-    Putri Pertama Bapak Beni Wahyudi dan Ibu Mia Priastuti<br>
-    <p>dengan</p> 
-    <h3>Ahmad Iqbal Zakaria</h3>
-    Putra Pertama Bapak Gunawan dan Ibu Maria Ulfa<br>
-    <p>
-      Akad Nikah: Senin, 19 Januari 2026 pukul 09.00 WIB<br>
-      Resepsi: Senin, 19 Januari 2026 pukul 11.00 - selesai WIB<br>
-      Lokasi: Kediaman mempelai putri, Jl. Raya Wonorejo RT 08 RW 02, Kec. Poncokusumo, Kab. Malang
-    </p>
-    <p>
-      Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.
-    </p>
-    <p>Wassalamu'alaikum Warahmatullahi Wabarakatuh</p>
+  <section id="undangan" style="display: none">
+    <div class="content">
+      <h2>Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
+      <p>Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami:</p>
+      <h3>Ahmad Iqbal Zakaria, S.Kom</h3>
+      <p>Putra dari Bapak Gunawan, S.Pd.I dan Ibu Maria Ulfa, S.Ag</p>
+      <a href="https://www.instagram.com/iqbalzakaria.01" target="_blank">@iqbalzakaria.01</a>
 
-    <hr>
-    <h4>Angpau Digital</h4>
-    <p>Bagi yang ingin mengirimkan tanda kasih secara digital, dapat dikirim melalui rekening berikut:</p>
-    <p><strong>BRI: 6401-0103-3389-532</strong></p>
-    <button onclick="salinRekening()">Salin Nomor Rekening</button>
-    <p id="notif" style="color: green;"></p>
+      <h3>Aulia Umi Nabila, S.Pd</h3>
+      <p>Putri dari Bapak Beni Wahyudi, S.T dan Ibu Mia Priastuti, S.T</p>
+      <a href="https://www.instagram.com/auliawyd.01" target="_blank">@auliawyd.01</a>
+
+      <p><strong>Senin, 19 Januari 2026</strong></p>
+      <p>Kediaman Mempelai Wanita</p>
+      <p>JL Raya Woorejo RT 08 RW 02, Kec. Poncokusumo, Kab. Malang</p>
+      <a href="https://maps.app.goo.gl/GsoXw84fCMbxTKvy9?g_st=ipc" target="_blank">Lihat di Google Maps</a>
+
+      <div class="next-link">
+        <a href="cerita.html">Lanjut ke Cerita Cinta &rarr;</a>
+      </div>
+    </div>
   </section>
 
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
